@@ -56,7 +56,7 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
-  - task: AzureWebApp@1
+- task: AzureWebApp@1
   displayName: 'Azure Web App Deploy'
   inputs:
     azureSubscription: $(azureSubscription)
